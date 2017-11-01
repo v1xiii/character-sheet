@@ -1,0 +1,134 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<title>Character Sheet</title>
+	<link rel="stylesheet" type="text/css" href="./character-sheet.css">
+</head>
+<body>
+<header>
+	<h1>Character Sheet</h1>
+</header>
+<form action=mailto:"lee_scholl91@u.asumh.edu" method="post" enctype="text/plain" id="character_creation">
+	<fieldset id="Profile">
+		<legend>Profile</legend>
+		<label>
+			<h2>Name</h2>
+			<input type="text" name="name_text" id="name_text">
+		</label>
+		<label>
+			<h2>Race</h2>
+			<select name="race_select">
+				<option value="Elezen">Elezen</option>
+				<option value="Hyur">Hyur</option>
+				<option value="Lalafell">Lalafell</option>
+				<option value="Miqo'te">Miqo'te</option>
+				<option value="Roegadyn">Roegadyn</option>
+				<option value="Au Ra">Au Ra</option>
+			</select>
+		</label>
+		<label>
+			<h2>Sex</h2>
+			Male <input type="radio" name="sex" value="male">
+			Female <input type="radio" name="sex" value="female">
+		</label>
+		<label>
+			<h2>Class</h2>
+			<select name="class_select">
+				<option value="Paladin">Paladin</option>
+				<option value="Warrior">Warrior</option>
+				<option value="Dark Knight">Dark Knight</option>
+				<option value="Astrologian">Astrologian</option>
+				<option value="Scholar">Scholar</option>
+				<option value="White Mage">White Mage</option>
+				<option value="Bard">Bard</option>
+				<option value="Black Mage">Black Mage</option>
+				<option value="Dragoon">Dragoon</option>
+				<option value="Machinist">Machinist</option>
+				<option value="Monk">Monk</option>
+				<option value="Ninja">Ninja</option>
+				<option value="Red Mage">Red Mage</option>
+				<option value="Samurai">Samurai</option>
+				<option value="Summoner">Summoner</option>
+			</select>
+		</label>
+	</fieldset>
+	<fieldset id="Attributes">
+		<legend>Attributes</legend>
+		<label>
+			<h2>Attributes</h2>
+			<h3>Strength</h3>
+			<input type="text" name="str">
+			<h3>Dexterity</h3>
+			<input type="text" name="dex">
+			<h3>Vitality</h3>
+			<input type="text" name="vit">
+			<h3>Intelligence</h3>
+			<input type="text" name="int">
+			<h3>Mind</h3>
+			<input type="text" name="mnd">
+			<h3>Piety</h3>
+			<input type="text" name="pie">
+		</label>
+		<label>
+			<h2>Offensive Properties</h2>
+			<h3>Accuracy</h3>
+			<input type="text" name="accuracy">
+			<h3>Critical Hit Rate</h3>
+			<input type="text" name="critical_hitrate">
+			<h3>Determination</h3>
+			<input type="text" name="determination">
+		</label>
+		<label>
+			<h2>Physical Properties</h2>
+			<h3>Attack Power</h3>
+			<input type="text" name="attack_power">
+			<h3>Skill Speed</h3>
+			<input type="text" name="skill_speed">
+		</label>
+		<label>
+			<h2>Mental Properties</h2>
+			<h3>Attack Magic Potency</h3>
+			<input type="text" name="attack_magic_potency">
+			<h3>Healing Magic Potency</h3>
+			<input type="text" name="healing_magic_potency">
+			<h3>Spell Speed</h3>
+			<input type="text" name="spell_speed">
+		</label>
+		<label>
+			<h2>Defensive Properties</h2>
+			<h3>Defense</h3>
+			<input type="text" name="defense">
+			<h3>Parry</h3>
+			<input type="text" name="parry">
+			<h3>Magic Defense</h3>
+			<input type="text" name="magic_defense">
+		</label>
+		<label>
+			<h2>Physical Resistances</h2>
+			<h3>Slashing</h3>
+			<input type="text" name="slashing">
+			<h3>Piercing</h3>
+			<input type="text" name="piercing">
+			<h3>Blunt</h3>
+			<input type="text" name="blunt">
+		</label>
+		<label>
+			<h2>Elemental Resistances</h2>
+			<h3>Fire</h3>
+			<input type="text" name="fire">
+			<h3>Ice</h3>
+			<input type="text" name="ice">
+			<h3>Wind</h3>
+			<input type="text" name="wind">
+			<h3>Earth</h3>
+			<input type="text" name="earth">
+			<h3>Lightning</h3>
+			<input type="text" name="lightning">
+			<h3>Water</h3>
+			<input type="text" name="water">
+		</label>
+	</fieldset>
+	<input type="submit" name="submit" value="Submit Sheet">
+</form>
+</body>
+</html>
