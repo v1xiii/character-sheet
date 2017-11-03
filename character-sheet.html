@@ -9,12 +9,14 @@
 	<h1>Character Sheet</h1>
 </header>
 <form action=mailto:"lee_scholl91@u.asumh.edu" method="post" enctype="text/plain" id="character_creation">
-	<fieldset id="Profile">
-		<legend>Profile</legend>
+	<div id="profile">
+	<div class="input_wrapper">
 		<label>
 			<h2>Name</h2>
 			<input type="text" name="name_text" id="name_text">
 		</label>
+		</div>
+		<div class="input_wrapper">
 		<label>
 			<h2>Race</h2>
 			<select name="race_select">
@@ -26,11 +28,15 @@
 				<option value="Au Ra">Au Ra</option>
 			</select>
 		</label>
+		</div>
+		<div class="input_wrapper">
 		<label>
 			<h2>Sex</h2>
 			Male <input type="radio" name="sex" value="male">
 			Female <input type="radio" name="sex" value="female">
 		</label>
+		</div>
+		<div class="input_wrapper">
 		<label>
 			<h2>Class</h2>
 			<select name="class_select">
@@ -51,9 +57,10 @@
 				<option value="Summoner">Summoner</option>
 			</select>
 		</label>
-	</fieldset>
-	<fieldset id="Attributes">
-		<legend>Attributes</legend>
+		</div>
+	</div>
+	<div id="attributes">
+		<div class="input_wrapper">
 		<label>
 			<h2>Attributes</h2>
 			<h3>Strength</h3>
@@ -69,6 +76,8 @@
 			<h3>Piety</h3>
 			<input type="text" name="pie">
 		</label>
+		</div>
+		<div class="input_wrapper">
 		<label>
 			<h2>Offensive Properties</h2>
 			<h3>Accuracy</h3>
@@ -78,6 +87,8 @@
 			<h3>Determination</h3>
 			<input type="text" name="determination">
 		</label>
+		</div>
+		<div class="input_wrapper">
 		<label>
 			<h2>Physical Properties</h2>
 			<h3>Attack Power</h3>
@@ -85,6 +96,8 @@
 			<h3>Skill Speed</h3>
 			<input type="text" name="skill_speed">
 		</label>
+		</div>
+		<div class="input_wrapper">
 		<label>
 			<h2>Mental Properties</h2>
 			<h3>Attack Magic Potency</h3>
@@ -94,6 +107,8 @@
 			<h3>Spell Speed</h3>
 			<input type="text" name="spell_speed">
 		</label>
+		</div>
+		<div class="input_wrapper">
 		<label>
 			<h2>Defensive Properties</h2>
 			<h3>Defense</h3>
@@ -103,6 +118,8 @@
 			<h3>Magic Defense</h3>
 			<input type="text" name="magic_defense">
 		</label>
+		</div>
+		<div class="input_wrapper">
 		<label>
 			<h2>Physical Resistances</h2>
 			<h3>Slashing</h3>
@@ -112,6 +129,8 @@
 			<h3>Blunt</h3>
 			<input type="text" name="blunt">
 		</label>
+		</div>
+		<div class="input_wrapper">
 		<label>
 			<h2>Elemental Resistances</h2>
 			<h3>Fire</h3>
@@ -127,7 +146,8 @@
 			<h3>Water</h3>
 			<input type="text" name="water">
 		</label>
-	</fieldset>
+		</div>
+	</div>
 	<input type="submit" name="submit" value="Submit Sheet">
 </form>
 </body>
