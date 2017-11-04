@@ -2,152 +2,203 @@
 <html>
 <head>
 	<title>Character Sheet</title>
-	<link rel="stylesheet" type="text/css" href="./character-sheet.css">
+	<link rel="stylesheet" type="text/css" href="./character-sheet-grid.css">
 </head>
 <body>
 <header>
 	<h1>Character Sheet</h1>
 </header>
 <form action=mailto:"lee_scholl91@u.asumh.edu" method="post" enctype="text/plain" id="character_creation">
+	<div id="grid_wrapper">
 	<div id="profile">
 	<div class="input_wrapper">
 		<label>
-			<h2>Name</h2>
+		<h3>Name</h3>
+		
 			<input type="text" name="name_text" id="name_text">
 		</label>
 		</div>
 		<div class="input_wrapper">
-		<label>
-			<h2>Race</h2>
-			<select name="race_select">
-				<option value="Elezen">Elezen</option>
-				<option value="Hyur">Hyur</option>
-				<option value="Lalafell">Lalafell</option>
-				<option value="Miqo'te">Miqo'te</option>
-				<option value="Roegadyn">Roegadyn</option>
-				<option value="Au Ra">Au Ra</option>
-			</select>
-		</label>
+			<label>
+			<h3>Race</h3>
+			
+				<select name="race_select" id="race_select">
+					<option value="Elezen">Elezen</option>
+					<option value="Hyur">Hyur</option>
+					<option value="Lalafell">Lalafell</option>
+					<option value="Miqo'te">Miqo'te</option>
+					<option value="Roegadyn">Roegadyn</option>
+					<option value="Au Ra">Au Ra</option>
+				</select>
+			</label>
 		</div>
 		<div class="input_wrapper">
-		<label>
-			<h2>Sex</h2>
-			Male <input type="radio" name="sex" value="male">
-			Female <input type="radio" name="sex" value="female">
-		</label>
+			<label>
+			<h3>Sex</h3>
+			
+				<input type="radio" name="sex" value="male">Male<br>
+			</label>
+			<label>
+				<input type="radio" name="sex" value="female">Female
+			</label>
 		</div>
 		<div class="input_wrapper">
-		<label>
-			<h2>Class</h2>
-			<select name="class_select">
-				<option value="Paladin">Paladin</option>
-				<option value="Warrior">Warrior</option>
-				<option value="Dark Knight">Dark Knight</option>
-				<option value="Astrologian">Astrologian</option>
-				<option value="Scholar">Scholar</option>
-				<option value="White Mage">White Mage</option>
-				<option value="Bard">Bard</option>
-				<option value="Black Mage">Black Mage</option>
-				<option value="Dragoon">Dragoon</option>
-				<option value="Machinist">Machinist</option>
-				<option value="Monk">Monk</option>
-				<option value="Ninja">Ninja</option>
-				<option value="Red Mage">Red Mage</option>
-				<option value="Samurai">Samurai</option>
-				<option value="Summoner">Summoner</option>
-			</select>
-		</label>
+			<label>
+				<h3>Class</h3>
+				<select name="class_select">
+					<option value="Paladin">Paladin</option>
+					<option value="Warrior">Warrior</option>
+					<option value="Dark Knight">Dark Knight</option>
+					<option value="Astrologian">Astrologian</option>
+					<option value="Scholar">Scholar</option>
+					<option value="White Mage">White Mage</option>
+					<option value="Bard">Bard</option>
+					<option value="Black Mage">Black Mage</option>
+					<option value="Dragoon">Dragoon</option>
+					<option value="Machinist">Machinist</option>
+					<option value="Monk">Monk</option>
+					<option value="Ninja">Ninja</option>
+					<option value="Red Mage">Red Mage</option>
+					<option value="Samurai">Samurai</option>
+					<option value="Summoner">Summoner</option>
+				</select>
+			</label>
 		</div>
 	</div>
 	<div id="attributes">
 		<div class="input_wrapper">
-		<label>
-			<h2>Attributes</h2>
-			<h3>Strength</h3>
+		
+			<h3>Attributes</h3>
+			<label>
+			<span>Strength</span>
 			<input type="text" name="str">
-			<h3>Dexterity</h3>
+			</label>
+			<label>
+			<span>Dexterity</span>
 			<input type="text" name="dex">
-			<h3>Vitality</h3>
+			</label>
+			<label>
+			<span>Vitality</span>
 			<input type="text" name="vit">
-			<h3>Intelligence</h3>
+			</label>
+			<label>
+			<span>Intelligence</span>
 			<input type="text" name="int">
-			<h3>Mind</h3>
+			</label>
+			<label>
+			<span>Mind</span>
 			<input type="text" name="mnd">
-			<h3>Piety</h3>
+			</label>
+			<label>
+			<span>Piety</span>
 			<input type="text" name="pie">
-		</label>
+			</label>
+		
 		</div>
 		<div class="input_wrapper">
-		<label>
-			<h2>Offensive Properties</h2>
-			<h3>Accuracy</h3>
+		
+			<h3>Offensive Properties</h3>
+			<label>
+			<span>Accuracy</span>
 			<input type="text" name="accuracy">
-			<h3>Critical Hit Rate</h3>
+			</label>
+			<label>
+			<span>Critical Hit Rate</span>
 			<input type="text" name="critical_hitrate">
-			<h3>Determination</h3>
+			</label>
+			<label>
+			<span>Determination</span>
 			<input type="text" name="determination">
-		</label>
+			</label>
 		</div>
 		<div class="input_wrapper">
-		<label>
-			<h2>Physical Properties</h2>
-			<h3>Attack Power</h3>
+			<h3>Physical Properties</h3>
+			<label>
+			<span>Attack Power</span>
 			<input type="text" name="attack_power">
-			<h3>Skill Speed</h3>
+			</label>
+			<label>
+			<span>Skill Speed</span>
 			<input type="text" name="skill_speed">
-		</label>
+			</label>
 		</div>
 		<div class="input_wrapper">
-		<label>
-			<h2>Mental Properties</h2>
-			<h3>Attack Magic Potency</h3>
+			<h3>Mental Properties</h3>
+			<label>
+			<span>Attack Magic Potency</span>
 			<input type="text" name="attack_magic_potency">
-			<h3>Healing Magic Potency</h3>
+			</label>
+			<label>
+			<span>Healing Magic Potency</span>
 			<input type="text" name="healing_magic_potency">
-			<h3>Spell Speed</h3>
+			</label>
+			<label>
+			<span>Spell Speed</span>
 			<input type="text" name="spell_speed">
-		</label>
+			</label>
 		</div>
 		<div class="input_wrapper">
-		<label>
-			<h2>Defensive Properties</h2>
-			<h3>Defense</h3>
+		
+			<h3>Defensive Properties</h3>
+			<label>
+			<span>Defense</span>
 			<input type="text" name="defense">
-			<h3>Parry</h3>
+			</label>
+			<label>
+			<span>Parry</span>
 			<input type="text" name="parry">
-			<h3>Magic Defense</h3>
+			</label>
+			<label>
+			<span>Magic Defense</span>
 			<input type="text" name="magic_defense">
-		</label>
+			</label>
 		</div>
 		<div class="input_wrapper">
-		<label>
-			<h2>Physical Resistances</h2>
-			<h3>Slashing</h3>
+		
+			<h3>Physical Resistances</h3>
+			<label>
+			<span>Slashing</span>
 			<input type="text" name="slashing">
-			<h3>Piercing</h3>
+			</label>
+			<label>
+			<span>Piercing</span>
 			<input type="text" name="piercing">
-			<h3>Blunt</h3>
+			</label>
+			<label>
+			<span>Blunt</span>
 			<input type="text" name="blunt">
-		</label>
+			</label>
 		</div>
 		<div class="input_wrapper">
-		<label>
-			<h2>Elemental Resistances</h2>
-			<h3>Fire</h3>
+		
+			<h3>Elemental Resistances</h3>
+			<label>
+			<span>Fire</span>
 			<input type="text" name="fire">
-			<h3>Ice</h3>
+			</label>
+			<label>
+			<span>Ice</span>
 			<input type="text" name="ice">
-			<h3>Wind</h3>
+			</label>
+			<label>
+			<span>Wind</span>
 			<input type="text" name="wind">
-			<h3>Earth</h3>
+			</label>
+			<label>
+			<span>Earth</span>
 			<input type="text" name="earth">
-			<h3>Lightning</h3>
+			</label>
+			<label>
+			<span>Lightning</span>
 			<input type="text" name="lightning">
-			<h3>Water</h3>
+			</label>
+			<label>
+			<span>Water</span>
 			<input type="text" name="water">
-		</label>
+			</label>
 		</div>
-	</div>
+		</div>
+		</div>
 	<input type="submit" name="submit" value="Submit Sheet">
 </form>
 </body>
