@@ -1,0 +1,115 @@
+@viewport {
+    zoom: 1.0;
+    width: device-width;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	background-color: #303030;
+	color: #B5B2AB;
+	font-family: 'Saira Condensed', sans-serif;
+}
+
+h1 {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    font-family: 'Offside', cursive;
+    font-size: 3rem;
+    letter-spacing: .2rem;
+    margin-bottom: .5rem;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: clip; 
+}
+
+h3 {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	font-size: 1rem
+}
+
+h1, #attributes h3 {
+	background-color: #1E201D;
+}
+
+label {
+	display: block;
+	width: 100%;
+	border-top: solid 1px;
+	border-bottom: solid 1px;
+}
+
+select, input  {
+	background-color: #1E201D;
+	color: #B5B2AB;
+}
+
+.green {
+	color: #88bc2b;
+}
+
+.purple {
+	color: #c637cc;
+}
+
+.input_wrapper {
+	border: solid;
+	min-width: 13rem;
+	max-width: 13rem;
+}
+
+.input_wrapper label {
+	padding: .5rem .3rem .5rem .3rem;
+}
+
+#profile {
+	display: inline-flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+#profile h3 {
+	padding: 0 .5rem 0 .5rem;
+}
+
+#profile label {
+	border: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+#profile .input_wrapper {
+	margin: 0 .5rem .5rem .5rem;
+	display: inline-flex;
+	align-items: center;
+}
+
+#name_text {
+	max-width: 8rem;
+}
+
+#attributes {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+#attributes .input_wrapper {
+	margin: 0 .5rem .5rem .5rem;
+}
+
+#attributes input {
+	width: 2rem;
+	position: relative;
+	float: right;
+	clear: right;
+}
