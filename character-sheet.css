@@ -47,7 +47,7 @@ label {
 	border-bottom: solid 1px;
 }
 
-select, input  {
+select, input, button  {
 	background-color: #1E201D;
 	color: #B5B2AB;
 }
@@ -62,8 +62,7 @@ select, input  {
 
 .input_wrapper {
 	border: solid;
-	min-width: 13rem;
-	max-width: 13rem;
+	width: 13rem;
 }
 
 .input_wrapper label {
@@ -108,8 +107,21 @@ select, input  {
 }
 
 #attributes input {
-	width: 2rem;
 	position: relative;
 	float: right;
 	clear: right;
+}
+
+.width_2rem{
+	width: 2rem;
+}
+
+#gen_control {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#gen_button, #submit_button {
+	margin-top: 4rem;
 }

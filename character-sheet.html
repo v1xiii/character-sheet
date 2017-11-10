@@ -1,9 +1,11 @@
-</!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Character Sheet</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="./character-sheet.css">
+	<script src="characterSheet.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Offside|Saira+Condensed" rel="stylesheet">
 </head>
 <body>
@@ -66,132 +68,135 @@
 					<h3>Attributes</h3>
 					<label>
 						<span class="green">Strength</span>
-						<input type="text" name="str" id="str_text">
+						<input type="text" name="str" id="str_text" class="width_2rem">
 					</label>
 					<label>
 						<span class="green">Dexterity</span>
-						<input type="text" name="dex" id="dex_text">
+						<input type="text" name="dex" id="dex_text" class="width_2rem">
 					</label>
 					<label>
 						<span class="green">Vitality</span>
-						<input type="text" name="vit" id="vit_text">
+						<input type="text" name="vit" id="vit_text" class="width_2rem">
 					</label>
 					<label>
 						<span class="purple">Intelligence</span>
-						<input type="text" name="int" id="int_text">
+						<input type="text" name="int" id="int_text" class="width_2rem">
 					</label>
 					<label>
 						<span class="purple">Mind</span>
-						<input type="text" name="mnd" id="mnd_text">
+						<input type="text" name="mnd" id="mnd_text" class="width_2rem">
 					</label>
 					<label>
 						<span class="purple">Piety</span>
-						<input type="text" name="pie" id="pie_text">
+						<input type="text" name="pie" id="pie_text" class="width_2rem">
 					</label>
 				</div>
 				<div class="input_wrapper">
 					<h3>Offensive Properties</h3>
 					<label>
 						<span>Accuracy</span>
-						<input type="text" name="accuracy" id="accuracy_text">
+						<input type="text" name="accuracy" id="accuracy_text" class="width_2rem">
 					</label>
 					<label>
 						<span>Critical Hit Rate</span>
-						<input type="text" name="critical_hitrate" id="critical_hitrate_text">
+						<input type="text" name="critical_hitrate" id="critical_hitrate_text" class="width_2rem">
 					</label>
 					<label>
 						<span>Determination</span>
-						<input type="text" name="determination" id="determination_text">
+						<input type="text" name="determination" id="determination_text" class="width_2rem">
 					</label>
 				</div>
 				<div class="input_wrapper">
 					<h3>Physical Properties</h3>
 					<label>
 						<span>Attack Power</span>
-						<input type="text" name="attack_power" id="attack_power_text">
+						<input type="text" name="attack_power" id="attack_power_text" class="width_2rem">
 					</label>
 					<label>
 						<span>Skill Speed</span>
-						<input type="text" name="skill_speed" id="skill_speed_text">
+						<input type="text" name="skill_speed" id="skill_speed_text" class="width_2rem">
 					</label>
 				</div>
 				<div class="input_wrapper">
 					<h3>Mental Properties</h3>
 					<label>
 						<span>Attack Magic Potency</span>
-						<input type="text" name="attack_magic_potency" id="attack_magic_potency_text">
+						<input type="text" name="attack_magic_potency" id="attack_magic_potency_text" class="width_2rem">
 					</label>
 					<label>
 						<span>Healing Magic Potency</span>
-						<input type="text" name="healing_magic_potency" id="healing_magic_potency_text">
+						<input type="text" name="healing_magic_potency" id="healing_magic_potency_text" class="width_2rem">
 					</label>
 					<label>
 						<span>Spell Speed</span>
-						<input type="text" name="spell_speed" id="spell_speed_text">
+						<input type="text" name="spell_speed" id="spell_speed_text" class="width_2rem">
 					</label>
 				</div>
 				<div class="input_wrapper">
 					<h3>Defensive Properties</h3>
 					<label>
 						<span>Defense</span>
-						<input type="text" name="defense" id="defense_text">
+						<input type="text" name="defense" id="defense_text" class="width_2rem">
 					</label>
 					<label>
 						<span>Parry</span>
-						<input type="text" name="parry" id="parry_text">
+						<input type="text" name="parry" id="parry_text" class="width_2rem">
 					</label>
 					<label>
 						<span>Magic Defense</span>
-						<input type="text" name="magic_defense" id="magic_defense_text">
+						<input type="text" name="magic_defense" id="magic_defense_text" class="width_2rem">
 					</label>
 				</div>
 				<div class="input_wrapper">
 					<h3>Physical Resistances</h3>
 					<label>
 						<span>Slashing</span>
-						<input type="text" name="slashing" id="slashing_text">
+						<input type="text" name="slashing" id="slashing_text" class="width_2rem">
 					</label>
 					<label>
 						<span>Piercing</span>
-						<input type="text" name="piercing" id="piercing_text">
+						<input type="text" name="piercing" id="piercing_text" class="width_2rem">
 					</label>
 					<label>
 						<span>Blunt</span>
-						<input type="text" name="blunt" id="blunt_text">
+						<input type="text" name="blunt" id="blunt_text" class="width_2rem">
 					</label>
 				</div>
 				<div class="input_wrapper">
 					<h3>Elemental Resistances</h3>
 					<label>
 						<span>Fire</span>
-						<input type="text" name="fire" id="fire_text">
+						<input type="text" name="fire" id="fire_text" class="width_2rem">
 					</label>
 					<label>
 						<span>Ice</span>
-						<input type="text" name="ice" id="ice_text">
+						<input type="text" name="ice" id="ice_text" class="width_2rem">
 					</label>
 					<label>
 						<span>Wind</span>
-						<input type="text" name="wind" id="wind_text">
+						<input type="text" name="wind" id="wind_text" class="width_2rem">
 					</label>
 					<label>
 						<span>Earth</span>
-						<input type="text" name="earth" id="earth_text">
+						<input type="text" name="earth" id="earth_text" class="width_2rem">
 					</label>
 					<label>
 						<span>Lightning</span>
-						<input type="text" name="lightning" id="lightning_text">
+						<input type="text" name="lightning" id="lightning_text" class="width_2rem">
 					</label>
 					<label>
 						<span>Water</span>
-						<input type="text" name="water" id="water_text">
+						<input type="text" name="water" id="water_text" class="width_2rem">
 					</label>
 				</div>
 				<div class="input_wrapper">
 					<h3>Generator Control</h3>
+					<div id="gen_control">
+						<button type="button" id="gen_button" onclick="statGenerator()">Generate Values</button>
+						<input type="submit" name="submit" value="Submit Sheet" id="submit_button">
+					</div>
 				</div>
 			</div>
-	<input type="submit" name="submit" value="Submit Sheet" id="submit_button">
 </form>
 </body>
 </html>
